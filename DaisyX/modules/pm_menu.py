@@ -92,7 +92,7 @@ async def get_start_func(message, strings, edit=False):
     )
     buttons.add(
         InlineKeyboardButton(
-            "👸🏼 Add DaisyX to your group",
+            "👸🏼 Add Miss Nelly to your group",
             url=f"https://telegram.me/daisyxbot?startgroup=true",
         )
     )
