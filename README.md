@@ -1,5 +1,5 @@
 
-<h1 align="center"><b>❤️ DaisyX 2.0  ❤️</b></h1>
+<h1 align="center"><b>❤️ Miss Nelly 2.0  ❤️</b></h1>
 
 <h4 align="center">A Powerful, Smart And Simple Group Manager <br> ... Written with AioGram , Pyrogram and Telethon...</h4>
 <p align='center'>
@@ -31,7 +31,7 @@ Complete guide on deploying @DaisyXBot's clone on Heroku.
 
 
 # 🏃‍♂️ Easy Deploy 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamDaisyX/DaisyX.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/daveh/DaisyX.git)
 
 [Generate String Session](https://replit.com/@SpEcHiDe/GenerateStringSession)  << Select telethon
 
