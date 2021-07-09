@@ -60,7 +60,7 @@ async def fetch(url):
         return
 
 
-nelly_chats = []
+daisy_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @aspirer3
 
@@ -111,7 +111,7 @@ async def hmm(_, message):
         )
 
 
-@missnelly.on_message(
+@daisy.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
