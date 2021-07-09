@@ -31,7 +31,7 @@ from DaisyX import BOT_ID
 from DaisyX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
 from DaisyX.function.inlinehelper import arq
 from DaisyX.function.pluginhelpers import admins_only, edit_or_reply
-from DaisyX.services.pyrogram import pbot as daisyx
+from DaisyX.services.pyrogram import pbot as missnelly
 
 translator = google_translator()
 
@@ -111,7 +111,7 @@ async def hmm(_, message):
         )
 
 
-@daisyx.on_message(
+@missnelly.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -137,8 +137,8 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("nelly", "Aco")
+        test = test.replace("Nelly", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
@@ -218,7 +218,7 @@ async def hmm(client, message):
             return
 
 
-@daisyx.on_message(
+@missnelly.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -281,7 +281,7 @@ async def inuka(client, message):
         pro = translator.translate(pro, dest=lan)
         pro = pro.text
     try:
-        await daisyx.send_chat_action(message.chat.id, "typing")
+        await missnellyx.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
