@@ -111,7 +111,7 @@ async def hmm(_, message):
         )
 
 
-@daisy.on_message(
+@daisyx.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -218,7 +218,7 @@ async def hmm(client, message):
             return
 
 
-@daisy.on_message(
+@daisyx.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
