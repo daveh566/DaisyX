@@ -212,7 +212,7 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await nelly.send_chat_action(message.chat.id, "typing")
+            await daisy.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -281,14 +281,14 @@ async def inuka(client, message):
         pro = translator.translate(pro, dest=lan)
         pro = pro.text
     try:
-        await missnellyx.send_chat_action(message.chat.id, "typing")
+        await daisyx.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
 @daisyx.on_message(
-    filters.regex("Nelly|Miss nelly")
+    filters.regex("Nelly|Miss|nelly")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
