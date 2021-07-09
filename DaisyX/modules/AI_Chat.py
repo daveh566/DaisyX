@@ -31,7 +31,7 @@ from DaisyX import BOT_ID
 from DaisyX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
 from DaisyX.function.inlinehelper import arq
 from DaisyX.function.pluginhelpers import admins_only, edit_or_reply
-from DaisyX.services.pyrogram import pbot as missnelly
+from DaisyX.services.pyrogram import pbot as daisyx
 
 translator = google_translator()
 
@@ -82,7 +82,7 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Daisy AI Already Activated In This Chat")
+            await lel.edit("Nelly AI Already Activated In This Chat")
             return
         await lel.edit(
             f"Nelly AI Successfully Added For Users In The Chat {message.chat.id}"
