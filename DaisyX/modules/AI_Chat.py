@@ -1,6 +1,6 @@
-# Copyright (C) 2021 Red-Aura & TeamDaisyX & HamkerCat
+# Copyright (C) 2021 Red-Aura & @intimacyfolkz & HamkerCat
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Nelly (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -62,7 +62,7 @@ async def fetch(url):
 
 nelly_chats = []
 en_chats = []
-# AI Chat (C) 2020-2021 by @InukaAsith
+# AI Chat (C) 2020-2021 by @aspirer3
 
 
 @daisyx.on_message(
@@ -357,7 +357,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await daisyx.send_chat_action(message.chat.id, "typing")
+        await missnelly.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
