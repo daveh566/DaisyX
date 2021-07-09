@@ -60,7 +60,7 @@ async def fetch(url):
         return
 
 
-daisy_chats = []
+nelly_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 
@@ -70,7 +70,7 @@ en_chats = []
 )
 @admins_only
 async def hmm(_, message):
-    global daisy_chats
+    global nelly_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -85,7 +85,7 @@ async def hmm(_, message):
             await lel.edit("Daisy AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Nelly AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
@@ -287,7 +287,7 @@ async def inuka(client, message):
         return
 
 
-@daisyx.on_message(
+@missnellyx.on_message(
     filters.regex("Nelly|Miss nelly")
     & ~filters.bot
     & ~filters.via_bot
@@ -365,14 +365,14 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-DAISY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+MISS NELLY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from daisy
+ - /ask [question]: Ask question from nelly
  - /ask [reply to voice note]: Get voice reply
  
 """
