@@ -218,7 +218,7 @@ async def hmm(client, message):
             return
 
 
-@missnelly.on_message(
+@daisy.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -287,7 +287,7 @@ async def inuka(client, message):
         return
 
 
-@missnellyx.on_message(
+@daisyx.on_message(
     filters.regex("Nelly|Miss nelly")
     & ~filters.bot
     & ~filters.via_bot
