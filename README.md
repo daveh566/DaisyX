@@ -32,7 +32,7 @@ Complete guide on deploying @DaisyXBot's clone on Heroku.
 
 
 # 🏃‍♂️ Easy Deploy 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamDaisyX/DaisyX.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/daveh566/DaisyX.git)
 
 [Generate String Session](https://replit.com/@SpEcHiDe/GenerateStringSession)  << Select telethon
 
@@ -45,7 +45,7 @@ Complete guide on deploying @DaisyXBot's clone on Heroku.
 ### Self-hosting (For Devs) ⚔
 ```sh
 # Install Git First (apt-instll git)
-$ git clone https://github.com/TeamDaisyX/DaisyX
+$ git clone https://github.com/daveh566/DaisyX
 $ cd DaisyX
 # Upgrade sources
 $ bash deploy.sh
