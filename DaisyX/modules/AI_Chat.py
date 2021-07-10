@@ -62,7 +62,7 @@ async def fetch(url):
 
 daisy_chats = []
 en_chats = []
-# AI Chat (C) 2020-2021 by @aspirer3
+# AI Chat (C) 2020-2021 by @InukaAsith
 
 
 @daisyx.on_message(
@@ -70,7 +70,7 @@ en_chats = []
 )
 @admins_only
 async def hmm(_, message):
-    global nelly_chats
+    global daisy_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -82,20 +82,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Nelly AI Already Activated In This Chat")
+            await lel.edit("Daisy AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Nelly AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Daisy AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Miss Nelly AI Was Not Activated In This Chat")
+            await lel.edit("Daisy AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Miss Nelly AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Daisy AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -137,17 +137,17 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("nelly", "Aco")
-        test = test.replace("Nelly", "Aco")
+        test = test.replace("daisy", "Aco")
+        test = test.replace("Daisy", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Nelly")
-        response = response.replace("aco", "Nelly")
+        response = response.replace("Aco", "Daisy")
+        response = response.replace("aco", "Daisy")
 
         pro = response
         try:
-            await nelly.send_chat_action(message.chat.id, "typing")
+            await daisyx.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -195,15 +195,15 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("nelly", "Aco")
-        test = test.replace("nelly", "Aco")
+        test = test.replace("daisy", "Aco")
+        test = test.replace("Daisy", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "nelly")
-        response = response.replace("aco", "nelly")
-        response = response.replace("Luna", "nelly")
-        response = response.replace("luna", "nelly")
+        response = response.replace("Aco", "Daisy")
+        response = response.replace("aco", "Daisy")
+        response = response.replace("Luna", "Daisy")
+        response = response.replace("luna", "Daisy")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -212,7 +212,7 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await daisy.send_chat_action(message.chat.id, "typing")
+            await daisyx.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -269,12 +269,12 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("nelly", "Aco")
-    test = test.replace("nelly", "Aco")
+    test = test.replace("daisy", "Aco")
+    test = test.replace("Daisy", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Nelly")
-    response = response.replace("aco", "Nelly")
+    response = response.replace("Aco", "Daisy")
+    response = response.replace("aco", "Daisy")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -288,7 +288,7 @@ async def inuka(client, message):
 
 
 @daisyx.on_message(
-    filters.regex("Nelly|Miss|nelly")
+    filters.regex("Daisy|daisy|DaisyX|daisyx|Daisyx")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -343,11 +343,11 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("nelly", "Aco")
-    test = test.replace("Nelly", "Aco")
+    test = test.replace("daisy", "Aco")
+    test = test.replace("Daisy", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Nelly")
-    response = response.replace("aco", "Nelly")
+    response = response.replace("Aco", "Daisy")
+    response = response.replace("aco", "Daisy")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -357,7 +357,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await missnelly.send_chat_action(message.chat.id, "typing")
+        await daisyx.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
@@ -365,14 +365,14 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-MISS NELLY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+DAISY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from nelly
+ - /ask [question]: Ask question from daisy
  - /ask [reply to voice note]: Get voice reply
  
 """
