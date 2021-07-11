@@ -1,6 +1,6 @@
-from DaisyX.services.mongo import mongodb as missnelly_x
+from DaisyX.services.mongo import mongodb as db_x
 
-lydia = missnelly_x["CAHTBOT"]
+lydia = db_x["CAHTBOT"]
 
 
 def add_chat(chat_id):
