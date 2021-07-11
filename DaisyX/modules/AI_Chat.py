@@ -31,7 +31,7 @@ from DaisyX import BOT_ID
 from DaisyX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
 from DaisyX.function.inlinehelper import arq
 from DaisyX.function.pluginhelpers import admins_only, edit_or_reply
-from DaisyX.services.pyrogram import pbot as daisyx
+from DaisyX.services.pyrogram import pbot as nelly
 
 translator = google_translator()
 
@@ -60,17 +60,17 @@ async def fetch(url):
         return
 
 
-daisy_chats = []
+nelly_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 
 
-@daisyx.on_message(
+@nelly.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
 async def hmm(_, message):
-    global daisy_chats
+    global nelly_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -111,7 +111,7 @@ async def hmm(_, message):
         )
 
 
-@daisyx.on_message(
+@nelly.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -218,7 +218,7 @@ async def hmm(client, message):
             return
 
 
-@daisyx.on_message(
+@nelly.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -269,12 +269,12 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("miss Nelly", "Aco")
-    test = test.replace("Miss Nelly", "Aco")
+    test = test.replace("Nelly", "Aco")
+    test = test.replace("Nelly", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Nelly")
+    response = response.replace("aco", "Nelly")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -288,7 +288,7 @@ async def inuka(client, message):
 
 
 @daisyx.on_message(
-    filters.regex("Miss Nelly|miss Nelly")
+    filters.regex("Nelly|nelly")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -343,11 +343,11 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("miss Nelly", "Aco")
-    test = test.replace("Miss Nelly", "Aco")
+    test = test.replace("nelly", "Aco")
+    test = test.replace("Nelly", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Miss Nelly")
-    response = response.replace("aco", "Miss Nelly")
+    response = response.replace("Aco", "Nelly")
+    response = response.replace("aco", "Nelly")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -365,14 +365,14 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-DAISY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+NELLY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from Miss Nelly
+ - /ask [question]: Ask question from Nelly
  - /ask [reply to voice note]: Get voice reply
  
 """
