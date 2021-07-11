@@ -7,7 +7,7 @@ MONGO = get_str_key("MONGO_URI", required=True)
 if MONGO2 == None:
     MONGO2 = MONGO
 myclient = pymongo.MongoClient(MONGO2)
-mydb = myclient["Daisy"]
+mydb = myclient["Miss Nelly"]
 mycol = mydb["CONNECTION"]
 
 
