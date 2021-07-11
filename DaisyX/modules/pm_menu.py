@@ -48,7 +48,7 @@ STICKERS = (
     "CAACAgIAAx0CTmcXBQACA_Fg6pWUuacxPunqcI2h33SE1uOoRwACAnkAAmOLRgz0dsaTzv10TB4E",
     "CAACAgIAAx0CTmcXBQACA-5g6pWHC2VqJaZSsdN4LKy41D0XxwAC2XgAAmOLRgxE-DP2On961x4E",
     "CAACAgUAAxkBAAJOHGBeljOJ35CQNnkpnVcgRoHuJX6DAAL3AQACN8TBVm1PIART01cWHgQ",
-   )
+)
 
    
 @register(cmds="start", no_args=True, only_groups=True)
